@@ -153,7 +153,8 @@
                     alpha: true,
                     desynchronized: true,
                 })
-                var dpr = Math.max(1, window.devicePixelRatio || 1)
+                //var dpr = Math.max(1, window.devicePixelRatio || 1)
+                var dpr = Math.min(2, Math.max(1, window.devicePixelRatio || 1))
                 var authoredW = scene.meta.authoredWidth || 600,
                     authoredH = scene.meta.authoredHeight || 400
                 var sourceW = scene.meta.sourceWidth || authoredW,
