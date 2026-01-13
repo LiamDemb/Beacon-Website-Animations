@@ -405,6 +405,10 @@
                             ? scene.meta.background
                             : "#ffffff"
                     ctx.fillRect(0, 0, viewW, viewH)
+                    ctx.fillStyle =
+                        scene.meta && scene.meta.particleColor
+                            ? scene.meta.particleColor
+                            : "#000000"
                     if (mode === "shape") {
                         var ps = buildShapeParticles()
                         if (!__postedParticles) {
