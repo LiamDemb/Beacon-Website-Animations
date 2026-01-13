@@ -168,26 +168,20 @@
                     viewH = 0
                 var __postedResize = 0
                 function resize() {
-                    viewW = Math.max(1, window.innerWidth)
-                    viewH = Math.max(1, window.innerHeight)
+                    var r = root.getBoundingClientRect()
+                    viewW = Math.max(1, Math.floor(r.width))
+                    viewH = Math.max(1, Math.floor(r.height))
+
+                    // Fallback if Webflow reports 0 height during initial layout
+                    if (viewH <= 1) viewH = Math.max(1, window.innerHeight)
+
                     canvas.width = Math.floor(viewW * dpr)
                     canvas.height = Math.floor(viewH * dpr)
                     ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+
                     scale = Math.min(viewW / authoredW, viewH / authoredH)
                     offX = (viewW - authoredW * scale) / 2
                     offY = (viewH - authoredH * scale) / 2
-                    if (!__postedResize) {
-                        __postedResize = 1
-                        __post("resize", {
-                            viewW: viewW,
-                            viewH: viewH,
-                            authoredW: authoredW,
-                            authoredH: authoredH,
-                            scale: scale,
-                            offX: offX,
-                            offY: offY,
-                        })
-                    }
                 }
                 window.addEventListener("resize", resize)
                 resize()
