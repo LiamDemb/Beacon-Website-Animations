@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width,height=device-height,initial-scale=1"
+        />
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                background: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <div
+            id="protonBrushEmbed_0irn39tuqihh"
+            style="
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            "
+        ></div>
+        <div
+            id="__pb_loading"
+            style="
+                position: absolute;
+                left: 8px;
+                top: 8px;
+                font: 12px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
+                color: #9aa4b2;
+                pointer-events: none;
+            "
+        >
+            Loading...
+        </div>
+        <div
+            id="__pb_err"
+            style="
+                position: absolute;
+                left: 8px;
+                bottom: 8px;
+                right: 8px;
+                font: 12px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
+                color: #ff6b6b;
+                white-space: pre-wrap;
+                pointer-events: none;
+            "
+        ></div>
+        <script>
+            ;(function () {
+                var scene = {
+                    meta: {
+                        version: 3,
+                        authoredWidth: 1588,
+                        authoredHeight: 1672,
+                        sourceWidth: 3140,
+                        sourceHeight: 1352,
+                        crop: { x: 776, y: -160, w: 1588, h: 1672 },
+                        background: "#ffffff",
+                        particleColor: "#000000",
+                        particleColor2: "#d10000",
+                        particleColor2Pct: 10,
+                    },
+                    mode: "spine",
+                    animation: {
+                        animate: 1,
+                        flowSpeed: 30,
+                        wobbleAmp: 30,
+                        wobbleSpeed: 0.1,
+                        pulseStrength: 0.8,
+                        pulseSpeed: 0.2,
+                        shapeContainment: 0.5,
+                        shapeLeewayPx: 20,
+                    },
+                    recipe: {
+                        density: 0.2,
+                        beamVariance: 8,
+                        minSize: 3,
+                        maxSize: 3,
+                        organicWiggle: 0,
+                        seed: 221646774,
+                    },
+                    spines: [
+                        {
+                            id: "sp_0_0_0",
+                            name: "Path 1.1",
+                            visible: true,
+                            order: 0,
+                            q: 8,
+                            pc: 748,
+                            pb: "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SCkBBTopFAUrKScFHCk6BRwpOgUOKU0FAClhBfIodAXtKHsF4CiPBdIoowXFKLYFxSi2BbgoywWrKN8FnijzBZko+gWNKA8GgSgjBnQoOAZ0KDgGaShNBl0oYgZRKHcGTSh+BkIokwY3KKkGLCi+BiwovgYiKNMGFyjpBg0o/wYJKAYHACgcB/YnMgfsJ0gH7CdIB+MnXgfaJ3QH0SeLB84nkgfFJ6kHvSe/B7Qn1ge0J9YHrSfsB6UnAwidJxoImyciCJQnOQiNJ08Ifyd+CHknlQhyJ6wIcCe0CGsnywhlJ+IIXyf6CF8n+ghaJxEJVScpCVAnQAlPJ0gJSydgCUYneAlCJ48JQiePCT4npwk7J78JNyfWCTYn3wkzJ/YJMScOCi4nJgouJyYKLCc+CiknVgonJ24KJyd2CiUnjgokJ6YKIye+CiMnvgoiJ9YKISfuCiAnBgsgJw4LICcmCyAnPgsgJ1YLICdWCyEnbgsiJ4YLIieeCyMnpgskJ74LJifWCycn7gsnJ+4LKScGDCsnHgwtJzYMLic+DDEnVgw0J24MNyeGDDcnhgw6J50MPie1DEEnzQxDJ9UMRyftDEsnBA1PJxwNTyccDVQnMw1ZJ0sNXidiDWAnag1mJ4INbCeZDXEnsA1xJ7ANeCfHDX4n3g2EJ/YNhyf+DY4nFA6VJysOnCdCDpwnQg6kJ1kOqydwDrMnhg62J44OvielDscnuw7PJ9IOzyfSDtgn6A7hJ/4O6ycUD+4nHA/4JzIPAShIDwsoXg8LKF4PFihzDyAoiQ8qKJ4PLiimDzkouw9EKNAPTyjmD08o5g9bKPsPZygQEHIoJRB3KCwQgyhAEI8oVRCcKGkQnChpEKgofhC1KJIQwiimEMcorRDUKMEQ4ijVEPAo6BDwKOgQ/ij8EAwpDxEaKSMRHykpES4pPBE8KU8RSyliEUspYhFaKXURaSmHEXkpmhF+KaARjimyEZ4pxBGtKdYRrSnWEb4p6BHOKfkR3ikLEuQpERL1KSISBiozEhcqRBIXKkQSKCpVEjkqZRJLKnYSUSp8EmMqjBJ0KpwShiqsEoYqrBKZKrsSqyrLEr0q2hLDKuAS1irvEukq/hL8Kg0T/CoNEw8rGxMiKykTNSs4EzwrPRNQK0sTYytYE3crZhN3K2YTiytzE58rgROzK44TuiuSE84rnxPjK6wT9yu4E/cruBMMLMQTISzQEzUs3BM9LOATUizsE2cs9xN8LAMUfCwDFJEsDRSnLBgUvCwjFMQsJhTZLDAU7yw7FAUtRRQFLUUUGy1OFDEtWBRHLWEUTy1kFGUtbRR8LXYUki1+FJItfhSoLYcUvy2PFNYtlxTdLZkU9C2hFAsuqBQiLrAUIi6wFDkuthRQLr0UZy7EFG8uxhSGLswUnS7SFLUu2BS1LtgUzC7dFOQu4xT7LugUAy/qFBsv7hQyL/MUSi/4FEov+BRhL/sUeS//FJEvAxWZLwQVsS8IFcgvCxXgLw4V4C8OFfgvERUQMBMVKDAVFTAwFhVIMBgVYDAaFXgwHBV4MBwVkDAdFagwHhXAMB8VyDAfFeAwHxX4MCAVEDEgFQ==",
+                            rc: 748,
+                        },
+                        {
+                            id: "sp_0_1_1",
+                            name: "Path 1.2",
+                            visible: true,
+                            order: 1,
+                            q: 8,
+                            pc: 680,
+                            pb: "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",
+                            rc: 680,
+                        },
+                        {
+                            id: "sp_0_2_2",
+                            name: "Path 1.3",
+                            visible: true,
+                            order: 2,
+                            q: 8,
+                            pc: 678,
+                            pb: "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",
+                            rc: 678,
+                        },
+                        {
+                            id: "sp_0_3_3",
+                            name: "Path 1.4",
+                            visible: true,
+                            order: 3,
+                            q: 8,
+                            pc: 758,
+                            pb: "EDEgFQQxCxX3MPcU6zDiFOcw2xTaMMcUzTCzFMAwnhTAMJ4UszCLFKUwdxSYMGMUkzBcFIUwSRR3MDUUWjAPFEsw/BM9MOkTNzDiEygw0BMZML0T+i+ZE+ovhxPaL3QT1S9uE8UvXRO0L0sTpC86E6QvOhOTLygTgi8XE3IvBhNsLwATWi/wEkkv3xI4L88SOC/PEiYvvxIUL64SAi+eEvwumRLqLokS1y56EsUuahLFLmoSsi5bEp8uTRKNLj4Shi45EnMuKhJgLhwSOS4AEiUu8hESLuQRCy7fEfct0hHjLcURzy24Ec8tuBG6LasRpi2fEZEtkhGKLY4Rdi2CEWEtdhE3LV4RIi1TEQ0tSBEFLUQR8Cw5EdosLhGvLBoRmSwQEYMsBhF8LAIRZiz5EFAs7xAjLN0QDSzUEPcrzBDvK8kQ2CvBEMIruRCUK6kQfSuiEGcrmhBfK5gQSCuREDErihACK34Q6yp4ENQqchDMKnAQtSpqEJ0qZRBuKlsQVypWED8qUhA3KlAQHypMEAgqSBDYKUEQwCk+EKkpOxCgKToQiSk3EHEpNRBBKTAQKSkuEBEpLRAJKSwQ8SgrENkoKhCpKCgQkSgoEHkoKBBxKCgQWSgoEEEoKBARKCoQ+ScrEOEnLBDYJywQwScuEKknMBB5JzQQYSc3EEknORBBJzoQKSc9EBEnQRDiJkgQyiZMELMmUBCqJlEQkyZWEHsmWhBMJmQQNSZqEB4mbxAWJnEQ/iV3EOclfRC5JYoQoiWREIsllxCDJZoQbCWhEFUlqRA+JbAQPiWwECgluBARJcAQ+yTIEPMkyxDdJNQQxiTdELAk5hCwJOYQmiTvEIQk+RBuJAIRZiQFEVEkEBE7JBoRJSQkESUkJBEQJC8R+iM5EeUjRBHdI0gRyCNTEbMjXxGeI2oRniNqEYkjdhF0I4IRYCOOEVgjkhFEI58RMCOrERsjuBEbI7gRByPFEfMi0hHfIuAR2CLkEcUi8hGxIgASnSIOEp0iDhKKIhwSdyIqEmQiORJdIj4SSiJNEjgiXBIlImsSJSJrEhIiehIAIooS7iGZEughnxLWIa8SxCG/ErIhzxKyIc8SoSHfEo8h8BJ+IQATeCEGE2chFxNWISgTRiE5E0YhORM1IUsTJSFdExUhbhMPIXQT/yCGE+8gmRPgIKsT4CCrE9AgvRPBINATsiDiE60g6ROeIPwTjyAPFIEgIhSBICIUcyA1FGUgSBRXIFwUUiBjFEQgdhQ3IIoUKSCeFCkgnhQcILIUDyDHFAMg2xT+H+IU8h/3FOYfCxXZHyAV2R8gFc4fNRXCH0oVth9fFbIfZhWnH3sVnB+RFZEfphWRH6YVhx+8FX0f0RVyH+cVbx/uFWUfBBZbHxoWUR8wFlEfMBZIH0YWPx9cFjYfcxYzH3oWKx+RFiIfpxYaH74WGh++FhIf1RYKH+sWAx8CFwAfChf5HiEX8h44F+seTxfrHk8X5R5mF94efRfYHpQX1h6cF9AesxfKHssXwB75F7seERi2HigYtB4wGLAeSBirHmAYpB6PGKAepxicHr4Ymx7HGJge3hiVHvYYkB4mGY4ePhmMHlYZix5eGYoedhmJHo4Zhh6+GYYe1hmFHu4ZhR72GYUeDhqFHiYahR5WGoYebhqHHoYahx6OGokephqKHr4aix7WGose1hqOHu4akB4GG5IeHhuTHiYblR4+G5geVhubHm4bmx5uG58ehRuiHp0bph61G6cevRusHtUbsB7sG7QeBBy0HgQcuR4bHL4eMxzDHkocxR5SHMseahzQHoEc1h6YHNYemBzcHq8c4x7GHOke3hzsHuUc8x78HPoeEx0BHyodAR8qHQkfQR0QH1gdGB9uHRsfdh0jH40dLB+jHTQfuh00H7odPR/QHUcf5h1QH/wdUx8EHl0fGh5nHzAecB9FHnAfRR57H1sehR9xHpAfhh6TH44enh+jHqofuB61H84etR/OHsAf4h7MH/ce2B8MH9wfFB/oHygf9B89HwEgUR8BIFEfDiBmHxsgeh8nII4fLCCVHzkgqR9HIL0fVCDQH1Qg0B9jIOQfcSD3H38gCyCEIBEgkiAkIKEgNyCwIEogsCBKIL8gXSDOIHAg3SCCIOMgiCDyIJogAiGtIBIhvyASIb8gIiHQIDMh4iBDIfMgSSH5IFkhCyFqIRwhjCE9IZ4hTiGvIV8htSFkIcchdCHZIYQh/SGkIQ8isyEiIsMhKCLIITsi1yFNIuYhYCL1IWAi9SFzIgMihyISIpoiICKgIiUitCIzIsgiQSLvIlwiAyNpIhgjdiIeI3oiMyOHIkcjlCJxI6wihSO4IpojxCKhI8gitiPUIswj3yL2I/UiDCQAIyEkCiMpJA4jPiQYI1QkIiOAJDYjliQ/I6wkSCO0JEwjyiRUI+EkXSMNJW4jJCV2IzslfiNCJYEjWSWII3AlkCOeJZ4jtSWkI8wlqyPUJa0j6yWzIwImuSMxJsUjSSbKI2Am0CNoJtEjgCbWI5cm2yPGJuMj3ibnI/Ym6yP+JuwjFifvIy0n8yNdJ/gjdSf7I40n/iOVJ/4jrScAJMUnAiT1JwUkDSgGJCUoByQtKAckRSgIJF0oCCSNKAgkpSgIJL0oByTFKAck3SgGJPUoBSQlKQIkPSkAJFUp/yNdKf4jdSn7I40p+SO8KfMj1CnwI+wp7SP0KewjDCroIyQq5CNTKtsjairXI4Iq0iOKKtAjoSrLI7kqxSPnKroj/yq0IxYrriMeK6wjNSulI0wrniN6K5AjkCuJI6crgSOvK38jxit2I9wrbiMJLF0jICxVIzYsTCM9LEkjVCw/I2osNiOALCwjgCwsI5UsIiOrLBgjwSwOI8gsCiPeLAAj8yz1Igkt6iIJLeoiHi3fIjMt0yJILcgiTy3EImQtuCJ5Lawiji2gIo4toCKiLZMity2HIssteiLSLXYi5i1oIvotWyIOLk4iDi5OIiIuQCI1LjIiSS4lIlAuICJjLhEidi4DIoku9SGJLvUhnC7mIa8u1yHCLsghyC7DIdousyHtLqQh/y6UIf8ulCERL4QhIy90ITUvZCE7L14hTC9OIV0vPSFvLy0hby8tIYAvHCGQLwshoS/5IKcv9CC3L+IgyC/QINgvvyDYL78g6C+tIPcvmyAHMIkgDTCCIBwwcCArMF0gOjBLIDowSyBJMDggWDAlIGYwEiBrMAsgeTD4H4cw5B+WMNEfljDRH6MwvR+xMKkfvjCVH8Mwjh/QMHof3DBmH+kwUh/pMFIf9jA9HwIxKB8OMRQfEjENHx4x+B4qMeMeNTHOHjUxzh5AMbgeSzGjHlYxjh5aMYYeZTFxHm8xWx55MUYeeTFGHoMxMB6NMRoelzEEHpox/B2jMeYdrDHQHbUxuh21MbkdvTGjHcYxjR3OMXYd0TFuHdkxWB3hMUEd6DEqHegxKh3vMRMd9jH8HP4x5RwAMt0cBjLGHA0yrxwTMpgcEzKYHBkygRweMmkcJDJSHCYyShwrMjMcMDIbHDUyBBw1MgQcOTLsGz4y1BtCMr0bQzK1G0cynRtKMoUbTjJtG04ybRtRMlYbVDI+G1cyJhtXMh4bWjIGG1wy7hpeMtYaXjLWGl8yvhphMqYaYjKOGmMyhhpjMm4aZDJWGmUyPhplMj4aZTImGmUyDhplMvYZZTLuGWQy1hljMr4ZYzKmGWMyphlhMo4ZYDJ2GV8yXhleMlYZXDI+GVoyJhlYMg4ZWDIOGVUy9hhSMt4YTzLGGE4yvhhKMqcYRzKPGEMydxhDMncYPzJfGDsySBg2MjAYNTIoGDAyERgrMvkXJjLiFyYy4hcgMsoXGjKzFxUynBcTMpQXDDJ9FwYyZhf/MU4X/zFOF/gxNxfxMSEX6jEKF+cxAhfgMesW2DHUFtAxvhbQMb4WyDGnFr8xkRa3MXoWtDFzFqsxXBahMUYWmDEwFpgxMBaPMRoWhTEEFnsx7hV4MecVbTHRFWMxvBVYMaYVWDGmFU0xkRVCMXsVNzFmFTMxXxUnMUoVHDE1FRAxIBU=",
+                            rc: 758,
+                        },
+                        {
+                            id: "sp_0_4_4",
+                            name: "Path 1.5",
+                            visible: true,
+                            order: 4,
+                            q: 8,
+                            pc: 726,
+                            pb: "EDEgFQQxNRX5MEoV7TBfFekwZhXeMHsV0zCRFb0wvBWzMNEVqDDnFaUw7hWbMAQWkTAaFn8wRhZ1MFwWbDBzFmkwehZhMJEWWDCnFkgw1BZAMOsWOTACFzYwChcvMCEXKDA4FxowZhcUMH0XDTCUFwswnBcGMLMXADDKF/Uv+RfwLxEY6y8oGOovMBjlL0gY4S9gGNkvjxjWL6cY0i++GNEvxhjOL94Yyy/2GMYvJhnELz4Zwi9WGcEvXhnAL3YZvy+OGb0vvhm8L9YZuy/uGbsv9hm7Lw4auy8mGrwvVhq9L24avS+GGr4vjhq/L6YawS++GsQv7hrGLwYbyS8eG8kvJhvMLz4bzy9WG9YvhRvZL50b3S+1G94vvRvjL9Qb5y/sG/AvGxz1LzMc+i9KHPwvUhwCMGkcBzCBHBMwrxwaMMYcIDDdHCIw5RwqMPwcMTATHT8wQR1HMFgdTzBuHVIwdh1aMI0dYzCjHXQw0B19MOYdhjD8HYkwBB6TMBoenTAwHrEwWx67MHEexjCGHsowjh7VMKMe4DC4HvYw4x4CMfgeDjENHxIxFB8eMSgfKjE9H0QxZh9QMXofXTGOH2IxlR9vMakffTG9H5kx5B+nMfgftTELILoxEiDIMSUg1zE4IPUxXSAEMnAgEzKCIBkyiSApMpsgODKtIEgyvyBIMr8gWDLQIGky4iB5MvMgfzL5IJAyCyGgMhwhsTItIbEyLSHDMj0h1DJOIeUyXiHrMmQh/TJ0IQ8zhCEhM5QhITOUITMzpCFGM7MhWDPDIV4zyCFxM9chhDPmIZcz9SGXM/UhqjMDIr0zESLQMyAi1zMlIuszMiL+M0AiEjROIhI0TiImNFsiOjRoIk40diJVNHoiajSHIn40kyKSNKAikjSgIqc0rCK8NLgi0TTEItg0yCLtNNMiAjXfIhc16iIXNeoiLTX1IkI1ACNYNQojXzUOI3U1GCOLNSIjoDUsI6A1LCO2NTYjzDU/I+M1SSPqNUwjATZVIxc2XSMtNmYjLTZmI0Q2biNaNnYjcTZ/I3k2gSOQNokjpjaQI702mCO9Npgj1DaeI+s2pSMCN6wjCjeuIyE3tCM5N7ojUDfAI1A3wCNnN8UjfzfLI5Y30COeN9IjtjfXI8032yPlN+Aj5TfgI/w35CMUOOgjLDjsIzQ47SNMOPAjZDjzI3s49iN7OPYj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",
+                            rc: 726,
+                        },
+                        {
+                            id: "sp_0_5_5",
+                            name: "Path 1.6",
+                            visible: true,
+                            order: 5,
+                            q: 8,
+                            pc: 792,
+                            pb: "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NyrwGT8q7hlXKuoZbirlGYYq4BmGKuAZnSrbGbUq1hnMKtAZ1CrOGesqyBkCK8IZGiu8GRorvBkxK7YZSCuvGV8rqBlnK6YZfSueGZQrlxmrK48ZqyuPGcIrhxnYK38Z7yt3GfcrdBkNLGwZIyxjGTosWhk6LFoZUCxRGWYsRxl8LD4Zgyw6GZksMBmvLCYZxSwcGcUsHBnaLBIZ8CwHGQUt/BgNLfgYIi3tGDct4hhMLdYYTC3WGGEtyhh2Lb4Yii2yGJEtrhimLaEYui2VGM8tiBjPLYgY4y17GPctbhgLLmEYEi5cGCUuThg5LkAYTS4zGE0uMxhgLiQYcy4WGIYuBxiNLgIYny7zF7Iu5RfFLtYXxS7WF9cuxhfqLrcX/C6nFwIvohcUL5IXJi+BFzgvcRc4L3EXSS9hF1ovUBdsL0AXci86F4IvKReTLxgXpC8GF6QvBhe0L/UWxS/jFtUv0hbaL8wW6i+5FvovpxYKMJUWCjCVFhkwgxYoMHAWNzBeFj0wVxZLMEQWWjAxFmkwHhZpMB4WdzALFoUw9xWTMOQVmDDdFaUwyRWzMLUVwDCiFcAwohXNMI0V2jB5FecwZRXrMF4V9zBJFQQxNRUQMSAV",
+                            rc: 792,
+                        },
+                        {
+                            id: "sp_0_6_6",
+                            name: "Path 1.7",
+                            visible: true,
+                            order: 6,
+                            q: 8,
+                            pc: 640,
+                            pb: "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",
+                            rc: 640,
+                        },
+                    ],
+                    shape: null,
+                    packed: null,
+                }
+                var root = document.getElementById(
+                    "protonBrushEmbed_0irn39tuqihh"
+                )
+                if (!root) {
+                    return
+                }
+                var __pc1 = "#000000"
+                var __pc2 = "#d10000"
+                var __pc2t = Math.max(0, Math.min(1, 10 / 100))
+                var __errEl = document.getElementById("__pb_err")
+                function __showErr(msg) {
+                    try {
+                        if (__errEl) {
+                            __errEl.textContent = String(msg || "")
+                        }
+                    } catch (e) {}
+                }
+                var __loadEl = document.getElementById("__pb_loading")
+                function __hideLoading() {
+                    try {
+                        if (__loadEl && __loadEl.parentNode) {
+                            __loadEl.parentNode.removeChild(__loadEl)
+                        }
+                    } catch (e) {}
+                }
+                function __post(s, p) {
+                    try {
+                        if (window.parent && window.parent !== window) {
+                            window.parent.postMessage(
+                                Object.assign(
+                                    { type: "protonBrushEmbed", status: s },
+                                    p || {}
+                                ),
+                                "*"
+                            )
+                        }
+                    } catch (e) {}
+                }
+                __post("boot")
+                window.addEventListener("error", function (e) {
+                    __showErr((e && e.message) || e)
+                    __post("error", { message: (e && e.message) || String(e) })
+                })
+                window.addEventListener("unhandledrejection", function (e) {
+                    __showErr((e && e.reason) || e)
+                    __post("rejection", {
+                        message: String((e && e.reason) || e),
+                    })
+                })
+                var canvas = document.createElement("canvas")
+                canvas.style.width = "100%"
+                canvas.style.height = "100%"
+                canvas.style.display = "block"
+                canvas.style.position = "absolute"
+                canvas.style.left = "0"
+                canvas.style.top = "0"
+                root.appendChild(canvas)
+                var ctx = canvas.getContext("2d", {
+                    alpha: false,
+                    desynchronized: true,
+                })
+                var dpr = Math.min(2, Math.max(1, window.devicePixelRatio || 1))
+                var authoredW = scene.meta.authoredWidth || 600,
+                    authoredH = scene.meta.authoredHeight || 400
+                var sourceW = scene.meta.sourceWidth || authoredW,
+                    sourceH = scene.meta.sourceHeight || authoredH
+                var crop = scene.meta.crop || null
+                var cropX = crop ? crop.x || 0 : 0
+                var cropY = crop ? crop.y || 0 : 0
+                var scale = 1,
+                    offX = 0,
+                    offY = 0,
+                    viewW = 0,
+                    viewH = 0
+                var __postedResize = 0
+                function resize() {
+                    var r = root.getBoundingClientRect()
+                    viewW = Math.max(1, Math.floor(r.width))
+                    viewH = Math.max(1, Math.floor(r.height))
+                    if (viewH <= 1) {
+                        viewH = Math.max(1, window.innerHeight || 1)
+                    }
+                    canvas.width = Math.floor(viewW * dpr)
+                    canvas.height = Math.floor(viewH * dpr)
+                    ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+                    scale = Math.min(viewW / authoredW, viewH / authoredH)
+                    offX = (viewW - authoredW * scale) / 2
+                    offY = (viewH - authoredH * scale) / 2
+                    if (!__postedResize) {
+                        __postedResize = 1
+                        __post("resize", {
+                            viewW: viewW,
+                            viewH: viewH,
+                            authoredW: authoredW,
+                            authoredH: authoredH,
+                            scale: scale,
+                            offX: offX,
+                            offY: offY,
+                        })
+                    }
+                }
+                window.addEventListener("resize", resize)
+                resize()
+                var __tries = 0
+                ;(function __settle() {
+                    __tries++
+                    resize()
+                    if (__tries < 30) {
+                        setTimeout(__settle, 33)
+                    }
+                })()
+                function hash(n) {
+                    n = (n << 13) ^ n
+                    return (
+                        ((n * (n * n * 15731 + 789221) + 1376312589) &
+                            0x7fffffff) /
+                        2147483647
+                    )
+                }
+                function lerp(a, b, t) {
+                    return a + (b - a) * t
+                }
+                function smooth(t) {
+                    return t * t * (3 - 2 * t)
+                }
+                function noise2(x, y) {
+                    var xi = Math.floor(x),
+                        yi = Math.floor(y)
+                    var xf = x - xi,
+                        yf = y - yi
+                    var a = hash(xi * 374761 + yi * 668265)
+                    var b = hash((xi + 1) * 374761 + yi * 668265)
+                    var c = hash(xi * 374761 + (yi + 1) * 668265)
+                    var d = hash((xi + 1) * 374761 + (yi + 1) * 668265)
+                    var u = smooth(xf),
+                        v = smooth(yf)
+                    return lerp(lerp(a, b, u), lerp(c, d, u), v)
+                }
+                function hash01(seed) {
+                    var x = Math.sin(seed * 12.9898) * 43758.5453
+                    return x - Math.floor(x)
+                }
+                function mulberry32(a) {
+                    return function () {
+                        var t = (a += 0x6d2b79f5)
+                        t = Math.imul(t ^ (t >>> 15), t | 1)
+                        t ^= t + Math.imul(t ^ (t >>> 7), t | 61)
+                        return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+                    }
+                }
+                function makeGaussian(rand) {
+                    var spare = null
+                    return function (mean, sd) {
+                        if (spare !== null) {
+                            var v = spare
+                            spare = null
+                            return mean + sd * v
+                        }
+                        var u = 0,
+                            v = 0
+                        while (u === 0) u = rand()
+                        while (v === 0) v = rand()
+                        var mag = Math.sqrt(-2 * Math.log(u))
+                        var z0 = mag * Math.cos(2 * Math.PI * v)
+                        var z1 = mag * Math.sin(2 * Math.PI * v)
+                        spare = z1
+                        return mean + sd * z0
+                    }
+                }
+                function b64ToU8(b64) {
+                    var bin = atob(b64 || "")
+                    var len = bin.length
+                    var u8 = new Uint8Array(len)
+                    for (var i = 0; i < len; i++) u8[i] = bin.charCodeAt(i)
+                    return u8
+                }
+                var mode = "spine"
+                var anim = scene.animation || {}
+                var recipe = scene.recipe || {}
+                function map(v, a1, a2, b1, b2) {
+                    return b1 + ((v - a1) * (b2 - b1)) / Math.max(1e-6, a2 - a1)
+                }
+                var spines = scene.spines || []
+                if ((!spines || !spines.length) && scene.spine)
+                    spines = [scene.spine]
+                var spCount = spines.length | 0
+                var spQ = new Array(spCount),
+                    spN = new Array(spCount),
+                    spPts = new Array(spCount),
+                    spCum = new Array(spCount),
+                    spLen = new Array(spCount)
+                for (var sidx = 0; sidx < spCount; sidx++) {
+                    var s = spines[sidx]
+                    if (!s || !s.pb || !s.pc) {
+                        spN[sidx] = 0
+                        spLen[sidx] = 0
+                        continue
+                    }
+                    spQ[sidx] = s.q || 1
+                    spN[sidx] = s.pc | 0
+                    var u8 = b64ToU8(s.pb)
+                    spPts[sidx] = new Int16Array(u8.buffer)
+                    var cum = new Float32Array(spN[sidx])
+                    cum[0] = 0
+                    var L = 0
+                    for (var i = 0; i < spN[sidx] - 1; i++) {
+                        var ax = spPts[sidx][i * 2] / spQ[sidx],
+                            ay = spPts[sidx][i * 2 + 1] / spQ[sidx]
+                        var bx = spPts[sidx][(i + 1) * 2] / spQ[sidx],
+                            by = spPts[sidx][(i + 1) * 2 + 1] / spQ[sidx]
+                        L += Math.hypot(bx - ax, by - ay)
+                        cum[i + 1] = L
+                    }
+                    spCum[sidx] = cum
+                    spLen[sidx] = L
+                }
+                function pointAtS(si, s) {
+                    var pts = spPts[si],
+                        cum = spCum[si],
+                        N = spN[si] | 0,
+                        L = spLen[si] || 0,
+                        Q = spQ[si] || 1
+                    if (!pts || !cum || N < 2 || L <= 0) {
+                        return { x: 0, y: 0, nx: 0, ny: 1 }
+                    }
+                    var ss = s % L
+                    if (ss < 0) ss += L
+                    var lo = 0,
+                        hi = N - 2
+                    while (lo <= hi) {
+                        var mid = (lo + hi) >> 1
+                        if (ss < cum[mid]) hi = mid - 1
+                        else if (ss > cum[mid + 1]) lo = mid + 1
+                        else {
+                            lo = mid
+                            break
+                        }
+                    }
+                    var idx = Math.max(0, Math.min(N - 2, lo))
+                    var ax = pts[idx * 2] / Q,
+                        ay = pts[idx * 2 + 1] / Q
+                    var bx = pts[(idx + 1) * 2] / Q,
+                        by = pts[(idx + 1) * 2 + 1] / Q
+                    var segLen = Math.max(1e-6, cum[idx + 1] - cum[idx])
+                    var t = (ss - cum[idx]) / segLen
+                    var x = ax + (bx - ax) * t,
+                        y = ay + (by - ay) * t
+                    var tx = (bx - ax) / segLen,
+                        ty = (by - ay) / segLen
+                    return { x: x, y: y, nx: -ty, ny: tx }
+                }
+                var density = +recipe.density || 1
+                var beam = +recipe.beamVariance || 20
+                var minS = +recipe.minSize || 1
+                var maxS = +recipe.maxSize || 8
+                var seed = recipe.seed >>> 0 || 1
+                var rand = mulberry32(seed)
+                var gauss = makeGaussian(rand)
+                var particles = null
+                function buildSpineParticles() {
+                    if (particles) return particles
+                    particles = []
+                    var CL = 4
+                    for (var si = 0; si < spCount; si++) {
+                        var s = spines[si] || {}
+                        if (s.visible === false) continue
+                        var pts = spPts[si],
+                            cum = spCum[si],
+                            N = spN[si] | 0,
+                            Q = spQ[si] || 1
+                        if (!pts || !cum || N < 2) continue
+                        for (var i = 0; i < N - 1; i++) {
+                            var ax = pts[i * 2] / Q,
+                                ay = pts[i * 2 + 1] / Q
+                            var bx = pts[(i + 1) * 2] / Q,
+                                by = pts[(i + 1) * 2 + 1] / Q
+                            var dx = bx - ax,
+                                dy = by - ay
+                            var segLen = Math.hypot(dx, dy)
+                            if (segLen < 1e-6) continue
+                            var count = Math.min(
+                                2500,
+                                Math.ceil(segLen * density)
+                            )
+                            var segStartS = cum[i] || 0
+                            for (var j = 0; j < count; j++) {
+                                var tt = j / Math.max(1, count)
+                                var baseS = segStartS + tt * segLen
+                                var offN = gauss(0, beam)
+                                var offT = gauss(0, beam * 0.15)
+                                var limN = beam * CL
+                                var limT = beam * 0.15 * CL
+                                if (offN > limN) offN = limN
+                                else if (offN < -limN) offN = -limN
+                                if (offT > limT) offT = limT
+                                else if (offT < -limT) offT = -limT
+                                var dist = Math.abs(offN)
+                                var size = map(dist, 0, beam * 2, maxS, minS)
+                                if (size < minS) size = minS
+                                else if (size > maxS) size = maxS
+                                particles.push({
+                                    si: si,
+                                    s: baseS,
+                                    n: offN,
+                                    t: offT,
+                                    z: size,
+                                    seed:
+                                        ((si + 1) * 100000000 +
+                                            i * 100000 +
+                                            j) >>>
+                                        0,
+                                })
+                            }
+                        }
+                    }
+                    return particles
+                }
+                function init() {
+                    if (mode === "shape") {
+                        var sh = scene.shape || {}
+                        var svg = sh.svg || ""
+                        if (!svg) {
+                            __showErr("Shape mode: missing SVG")
+                            return Promise.resolve(false)
+                        }
+                        var leeway = (anim.shapeLeewayPx || 0) | 0
+                        return buildShapeMask(svg, leeway).then(function (
+                            mask
+                        ) {
+                            shapeMask = mask
+                            var stride = 2
+                            var r = bboxAndPts(
+                                mask.core,
+                                mask.w,
+                                mask.h,
+                                stride
+                            )
+                            shapePts = r.pts
+                            __post("shape", { pts: shapePts.length })
+                            return true
+                        })
+                    }
+                    return Promise.resolve(true)
+                }
+                var __postedParticles = 0
+                function renderFrame(tms) {
+                    var t = tms / 1000
+                    var wobA = anim.wobbleAmp || 0,
+                        wobS = anim.wobbleSpeed || 0,
+                        pulse = anim.pulseStrength || 0,
+                        pulseS = anim.pulseSpeed || 0
+                    var frameStep = Math.floor(
+                        t * Math.max(0.0001, pulseS) * 10
+                    )
+                    ctx.globalAlpha = 1
+                    ctx.fillStyle = "#ffffff"
+                    ctx.fillRect(0, 0, viewW, viewH)
+                    ctx.fillStyle = __pc1
+                    if (mode === "shape") {
+                        var ps = buildShapeParticles()
+                        if (!__postedParticles) {
+                            __postedParticles = 1
+                            __post("particles", { count: ps.length })
+                            __hideLoading()
+                        }
+                        var cont = +anim.shapeContainment || 0.5
+                        var inv = Math.max(0.001, 1 / Math.max(0.001, scale))
+                        var mix = __pc2t > 0
+                        for (var i = 0; i < ps.length; i++) {
+                            var p = ps[i]
+                            if (anim.animate) {
+                                if (wobA > 0) {
+                                    var ax =
+                                        (noise2(
+                                            p.seed * 0.013 + 17.13,
+                                            t * wobS + 5.37
+                                        ) -
+                                            0.5) *
+                                        2
+                                    var ay =
+                                        (noise2(
+                                            p.seed * 0.017 + 101.7,
+                                            t * wobS + 77.1
+                                        ) -
+                                            0.5) *
+                                        2
+                                    p.vx += ax * (wobA * 0.12 * inv)
+                                    p.vy += ay * (wobA * 0.12 * inv)
+                                }
+                                p.vx *= 0.9
+                                p.vy *= 0.9
+                                p.x += p.vx
+                                p.y += p.vy
+                                var kInside = (0.002 + 0.01 * cont) * inv
+                                p.vx += (p.x0 - p.x) * kInside
+                                p.vy += (p.y0 - p.y) * kInside
+                                var inCore =
+                                    alphaAt(shapeMask, p.x, p.y, "core") > 0
+                                if (!inCore) {
+                                    var inLew =
+                                        alphaAt(shapeMask, p.x, p.y, "leeway") >
+                                        0
+                                    var k = inLew
+                                        ? 0.02 + 0.12 * cont
+                                        : 0.06 + 0.22 * cont
+                                    k *= inv
+                                    p.vx += (p.x0 - p.x) * k
+                                    p.vy += (p.y0 - p.y) * k
+                                    if (!inLew) {
+                                        var cl = findNearestInside(
+                                            shapeMask,
+                                            p.x,
+                                            p.y
+                                        )
+                                        if (cl) {
+                                            p.x = cl.x
+                                            p.y = cl.y
+                                            p.vx *= 0.2
+                                            p.vy *= 0.2
+                                        } else {
+                                            p.x = p.x0
+                                            p.y = p.y0
+                                            p.vx *= 0.2
+                                            p.vy *= 0.2
+                                        }
+                                    }
+                                }
+                            }
+                            var alpha = 200 / 255
+                            if (anim.animate && pulse > 0) {
+                                var phase =
+                                    p.seed * 0.01 + t * pulseS * Math.PI * 2
+                                var vis =
+                                    1 -
+                                    pulse +
+                                    pulse * (0.5 + 0.5 * Math.sin(phase))
+                                var r = hash01(
+                                    (p.seed || i) + frameStep * 10007
+                                )
+                                if (r > vis) continue
+                                alpha = (80 + 175 * vis) / 255
+                            }
+                            var rx = offX + (p.x - cropX) * scale
+                            var ry = offY + (p.y - cropY) * scale
+                            var radPx = Math.max(((p.z || 1) * scale) / 2, 0.6)
+                            if (mix) {
+                                ctx.fillStyle =
+                                    hash01(p.seed || i) < __pc2t ? __pc2 : __pc1
+                            }
+                            ctx.globalAlpha = alpha
+                            ctx.beginPath()
+                            ctx.arc(rx, ry, radPx, 0, Math.PI * 2)
+                            ctx.fill()
+                        }
+                        ctx.globalAlpha = 1
+                        requestAnimationFrame(renderFrame)
+                        return
+                    }
+                    var flow = anim.flowSpeed || 0
+                    var ps = buildSpineParticles()
+                    if (!__postedParticles) {
+                        __postedParticles = 1
+                        __post("particles", { count: ps.length })
+                        __hideLoading()
+                    }
+                    var mix = __pc2t > 0
+                    for (var i = 0; i < ps.length; i++) {
+                        var p = ps[i]
+                        var si = p.si || 0
+                        var x = 0,
+                            y = 0,
+                            alpha = 200 / 255
+                        var s = (p.s || 0) + (anim.animate ? flow * t : 0)
+                        var base = pointAtS(si, s + (p.t || 0))
+                        x = base.x + base.nx * (p.n || 0)
+                        y = base.y + base.ny * (p.n || 0)
+                        if (anim.animate && wobA > 0) {
+                            var pr = p.seed || i
+                            var n1 =
+                                noise2(pr * 0.013 + 17.13, t * wobS + 5.37) -
+                                0.5
+                            var n2 =
+                                noise2(pr * 0.017 + 101.7, t * wobS + 77.1) -
+                                0.5
+                            x += n1 * 2 * wobA
+                            y += n2 * 2 * wobA
+                        }
+                        var L = spLen[si] || 0
+                        if (anim.animate && pulse > 0 && L > 0) {
+                            var phase =
+                                (s / L) * Math.PI * 2 + t * pulseS * Math.PI * 2
+                            var vis =
+                                1 -
+                                pulse +
+                                pulse * (0.5 + 0.5 * Math.sin(phase))
+                            var pr2 = (p.seed || i) + frameStep * 10007
+                            var r = hash01(pr2)
+                            if (r > vis) continue
+                            alpha = (80 + 175 * vis) / 255
+                        }
+                        var rx = offX + (x - cropX) * scale
+                        var ry = offY + (y - cropY) * scale
+                        var radPx = Math.max(((p.z || 1) * scale) / 2, 0.6)
+                        if (mix) {
+                            ctx.fillStyle =
+                                hash01(p.seed || i) < __pc2t ? __pc2 : __pc1
+                        }
+                        ctx.globalAlpha = alpha
+                        ctx.beginPath()
+                        ctx.arc(rx, ry, radPx, 0, Math.PI * 2)
+                        ctx.fill()
+                    }
+                    ctx.globalAlpha = 1
+                    requestAnimationFrame(renderFrame)
+                }
+                init()
+                    .then(function (ok) {
+                        if (ok === false) return
+                        __hideLoading()
+                        requestAnimationFrame(renderFrame)
+                    })
+                    .catch(function (e) {
+                        __showErr(e && e.message ? e.message : e)
+                        __post("error", {
+                            message: String(e && e.message ? e.message : e),
+                        })
+                    })
+            })()
+        </script>
+    </body>
+</html>
