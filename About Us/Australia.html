@@ -1,0 +1,634 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width,height=device-height,initial-scale=1"
+        />
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                background: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <div
+            id="protonBrushEmbed_sedg9abt5x"
+            style="
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            "
+        ></div>
+        <div
+            id="__pb_loading"
+            style="
+                position: absolute;
+                left: 8px;
+                top: 8px;
+                font:
+                    12px/1.35 ui-monospace,
+                    SFMono-Regular,
+                    Menlo,
+                    monospace;
+                color: #9aa4b2;
+                pointer-events: none;
+            "
+        >
+            Loading...
+        </div>
+        <div
+            id="__pb_err"
+            style="
+                position: absolute;
+                left: 8px;
+                bottom: 8px;
+                right: 8px;
+                font:
+                    12px/1.35 ui-monospace,
+                    SFMono-Regular,
+                    Menlo,
+                    monospace;
+                color: #ff6b6b;
+                white-space: pre-wrap;
+                pointer-events: none;
+            "
+        ></div>
+        <script>
+            ;(function () {
+                var scene = {
+                    meta: {
+                        version: 3,
+                        authoredWidth: 1556,
+                        authoredHeight: 1554,
+                        sourceWidth: 3140,
+                        sourceHeight: 1352,
+                        crop: { x: 792, y: -101, w: 1556, h: 1554 },
+                        background: "#ffffff",
+                        particleColor: "#000000",
+                        particleColor2: "#d10000",
+                        particleColor2Pct: 28,
+                    },
+                    mode: "spine",
+                    animation: {
+                        animate: 1,
+                        flowSpeed: 20,
+                        wobbleAmp: 0,
+                        wobbleSpeed: 0,
+                        pulseStrength: 0.7,
+                        pulseSpeed: 0.1,
+                        shapeContainment: 0.5,
+                        shapeLeewayPx: 20,
+                    },
+                    recipe: {
+                        density: 0.8,
+                        beamVariance: 15,
+                        minSize: 3,
+                        maxSize: 3,
+                        organicWiggle: 0,
+                        seed: 1188249802,
+                    },
+                    spines: [
+                        {
+                            id: "sp_0_0_0",
+                            name: "Path 1",
+                            visible: true,
+                            order: 0,
+                            q: 8,
+                            pc: 1185,
+                            pb: "hiBzGpAgiRqkILMauyDdGtMgBRvuIC0bCyFSGyohdhtLIZgbbiG5G5Ih1xu4IfMb3yENHAkiJhwyIjscXiJPHIkiYBy3Im8c5CJ8HBMjhhxBI40ccSOSHKAjlRzQI5Uc/yOSHC4kjRxdJIUcdCSBHHQkgRyLJHscuCRuHOYkXxwRJU4cPSU5HGYlIxyPJQsctyXxG8sl5BvLJeQb3yXWGwYmvBsaJq8bGiavGy4mohtVJogbaSZ7G2kmext9Jm0bpCZTG7gmRhu4JkYbzCY5G/MmHxsHJxEbBycRGxsnBBtCJ+oaVifdGlYn3RpqJ9AakSe2GqUnqBqlJ6gauSebGuAngRr0J3Qa9Cd0GggoZxovKE0aQyg/GkMoPxpXKDIafigYGpIoCxqSKAsapij9Gc0o4xnhKNYZ4SjWGfUoyRkcKa8ZMCmiGTApohlEKZQZayl6GX8pbRl/KW0ZkylgGbopRhnOKTgZzik4GeIpKxkJKhEZHSoEGR0qBBkxKvcYWCrdGGwqzxhsKs8YgCrCGKcqqBi7KpsYuyqbGM8qjhj3KnYYDCtqGAwrahghK14YSitHGF8rPBhfKzwYdCsxGJ4rHBizKxEYsysRGMkrBxj0K/QXCizqFwos6hcgLOEXTCzQF2IsxxdiLMcXeSy/F6UssBe8LKkXvCypF9MsohcALZUXFy2OFxctjhcvLYkXXC1+F3QteRd0LXkXiy11F7ktbRfRLWkX0S1pF+ktZhcYLmEXLy5fFy8uXxdHLl0Xdi5bF44uWheOLloXpi5aF9UuWhftLlsX7S5bFwUvXBc0L18XTC9hF0wvYRdkL2QXki9pF6ovbBeqL2wXwi9wF/AveBcHMH0XBzB9Fx8wghdMMI0XZDCTF2Qwkxd7MJoXpzCnF74wrxe+MK8X1TC3FwExyBcXMdEXFzHRFy0x2hdXMe4XbTH4F20x+BeCMQQYqzEaGMAxJhjAMSYY1TEzGPwxTBgQMloYEDJaGCMyaBhJMoQYXDKTGFwykxhuMqIYkTLBGKMy0RijMtEYtDLiGNYyAxnmMhQZ5jIUGfcyJRkXM0gZJzNZGSczWRk3M2sZVzONGWcznxlnM58ZeDOxGZcz0xmoM+UZqDPlGbgz9hnYMxka6DMqGugzKhr4MzwaGDRfGig0cBopNHAaOTSCGlk0pBppNLYaaTS2Gnk0xxqZNOoa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QShUBS8oZQUWKHwFBSiNBfwnlgXrJ6YF0ie+BcEnzwW4J9gFpyfpBY4nAQZ9JxEGdCcaBmMnKwZLJ0MGOSdUBjAnXAYfJ20GByeFBvYmlgbsJp8G2yavBsMmxwayJtgGqSbhBpcm8gZ/JgoHbiYaB2UmIwdUJjQHOyZMByomXQchJmYHECZ2B/cljgfmJZ8H3SWoB8wluQezJdEHoiXhB5kl6geIJfsHbyUTCF4lJAhVJSwIRCU9CCslVQgaJWYIESVvCAAlfwjnJJcI1iSoCM0ksQi8JMIIpCTaCJIk6giJJPMIeCQECWAkHAlOJC0JRSQ1CTQkRgkcJF4JCyRvCQIkeAnwI4gJ2COgCccjsQm+I7oJrCPLCZQj4wmDI/MJeiP8CWkjDQpQIyUKPyM2CjYjPgolI08KDCNnCvsieAryIoEK4SKSCsgiqQq3IroKriLDCp0i1AqEIuwKcyL8CmoiBQtZIhYLQCIuCy8iPwsmIkgLFSJYC/0hcAvrIYEL4iGKC9Ehmwu5IbMLpyHDC54hzAuNId0LdSH1C2QhBgxbIQ4MSSEfDDEhNwwgIUgMFyFRDAUhYQztIHkM3CCKDNMgkwzCIKQMqSC8DJggzAyPINUMfiDmDGUg/gxUIA8NSyAXDTogKA0hIEANECBRDQcgWg32H2oN3R+CDcwfkw3DH5wNsh+tDZkfxA2HH9QNfR/cDWsf6w1QHwEOPR8QDjQfGA4iHygOCB8+DvYeTg7tHlcO2x5nDsIefw6xHpAOqB6YDpceqg6AHsMObx7UDmce3Q5XHu8OQR4KDzIeHA8qHiYPGx45DwYeVA/4HWgP8R1yD+Qdhg/RHaMPxB23D74dwg+yHdcPoh31D5cdChCRHRUQhx0rEHodSxBxHWEQbB1tEGQdgxBZHaQQUh27EE8dxxBJHd4QQh0AET0dFxE7HSQRNx07ETMdXRExHXURMB2CES4dmhEtHbwRLR3UES0d4REuHfkRMB0bEjIdMxIzHT8SNh1XEjsdeRI/HZESQR2dEkYdtRJNHdYSUh3uElUd+hJcHRETZR0yE2wdSRNwHVUTeB1sE4MdjBOLHaMTkB2uE5gdxROlHeQTrx37E7QdBhS9HRwUyx07FNUdURTaHV0U4x1zFPEdkhT7HagUAB60FAoeyhQXHukUIR7/FCYeCxUwHiEVPh5AFUceVhVMHmEVVh53FWQelxVtHq0Vch64FXwezhWKHu4VlB4EFpkeDxaiHiUWsB5FFroeWxa/HmYWyB58FtYenBbgHrIW5R69Fu4e0xb8HvIWBh8IFwsfFBcVHyoXIh9JFywfXxcxH2sXOx+BF0kfoBdSH7YXVx/CF2Ef2BdvH/cXeB8NGH0fGBiHHy4YlR9OGJ8fZBikH28YrR+FGLsfpRjFH7sYyh/GGNMf3BjhH/wY6x8SGfAfHRn6HzMZByBTGREgaRkWIHQZICCKGS4gqRk3IL8ZPCDLGUYg4RlUIAAaXSAWGmIgIhpsIDgaeiBXGoMgbRqGIHMa",
+                            rc: 1185,
+                        },
+                        {
+                            id: "sp_1_0_1",
+                            name: "Path 2",
+                            visible: true,
+                            order: 1,
+                            q: 8,
+                            pc: 215,
+                            pb: "ozgOJLs4DiTpOA4kATkOJAE5DiQZOQ4kSDkOJGA5DiRgOQ4keDkOJKY5DiS+OQ4kvjkOJNY5DiQEOg4kHDoOJBw6DiQ0Og4kYjoOJJI6DiTAOg4k8DoOJB87DiQ3Ow4kNzsOJE87DiR9Ow4klTsOJJU7DiStOw4k2zsOJPM7DiTzOw4kCzwOJDk8DiRRPA4kUTwOJGk8DiSXPA4krzwOJK88DiTHPA4k9jwOJA49DiQOPQ4kJj0OJFQ9DiRsPQ4kbD0OJIQ9DiSyPQ4kyj0OJMo9DiTiPQ4kED4OJCg+DiQoPg4kQD4OJG4+DiSGPg4khj4OJJ4+DiTNPg4k5T4OJOU+DiT9Pg4kKz8OJEM/DiRDPw4kWz8OJIk/DiShPw4koT8OJLg/FiS/PyQkuj87JLQ/VCSuP2skqT9/JKM/lyScP68klj/GJJA/2iSJP/EkgT8JJXo/ICVzPzQlaz9KJWM/YiVbP3klUz+NJUs/oyVCP7olOT/RJTE/5CUnP/olHT8RJhQ/JyYLPzomAT9QJvY+ZybsPn0m4j6PJtc+pSbMPrsmwD7QJrY+4yarPvgmnj4NJ5I+IieHPjQnej5IJ20+XidfPnInUz6DJ0Y+lyc3PqsnKT6+Jxw+zycNPuIn/T31J+09ByjfPRcozz0pKL09OyisPUwonT1aKIs9aih4PXooZT2JKFQ9lihBPaQoLD2yKBc9vigFPcgo7zzTKNg83SjCPOYorjzsKJc88yh/PPgoZzz8KFI8/ig6PP8oITz/KAk8/Sj0O/oo3Tv2KMQ78CitO+komjviKIQ72ChtO80oWDvCKEU7uCgxO6soHDudKAk7jyj4OoIo5jpyKNM6YijBOlIosjpDKKE6MiiQOiAogDoOKHI6/idjOuwnUzrYJ0Q6xSc3OrUnKTqhJxo6jScNOnknATpnJ/Q5UyfnOT4n2jkqJ885GCfDOQMntzntJqs52CahOcYmljmwJoo5miZ/OYQmdjlyJmw5XCZhOUUmVzkvJk45HCZFOQYmOznvJTI52SUqOcUlITmvJRg5mCUQOYElCDltJQA5VyX4OD8l8DgoJeo4FCXjOP0k2zjlJNQ4ziTOOLokyDijJME4iyS7OHQktjhfJLA4SCSrOC8kpjgYJKM4DiQ=",
+                            rc: 215,
+                        },
+                    ],
+                    shape: null,
+                    packed: null,
+                }
+                var root = document.getElementById(
+                    "protonBrushEmbed_sedg9abt5x",
+                )
+                if (!root) {
+                    return
+                }
+                var __pc1 = "#000000"
+                var __pc2 = "#d10000"
+                var __pc2t = Math.max(0, Math.min(1, 28 / 100))
+                var __errEl = document.getElementById("__pb_err")
+                function __showErr(msg) {
+                    try {
+                        if (__errEl) {
+                            __errEl.textContent = String(msg || "")
+                        }
+                    } catch (e) {}
+                }
+                var __loadEl = document.getElementById("__pb_loading")
+                function __hideLoading() {
+                    try {
+                        if (__loadEl && __loadEl.parentNode) {
+                            __loadEl.parentNode.removeChild(__loadEl)
+                        }
+                    } catch (e) {}
+                }
+                function __post(s, p) {
+                    try {
+                        if (window.parent && window.parent !== window) {
+                            window.parent.postMessage(
+                                Object.assign(
+                                    { type: "protonBrushEmbed", status: s },
+                                    p || {},
+                                ),
+                                "*",
+                            )
+                        }
+                    } catch (e) {}
+                }
+                __post("boot")
+                window.addEventListener("error", function (e) {
+                    __showErr((e && e.message) || e)
+                    __post("error", { message: (e && e.message) || String(e) })
+                })
+                window.addEventListener("unhandledrejection", function (e) {
+                    __showErr((e && e.reason) || e)
+                    __post("rejection", {
+                        message: String((e && e.reason) || e),
+                    })
+                })
+                var canvas = document.createElement("canvas")
+                canvas.style.width = "100%"
+                canvas.style.height = "100%"
+                canvas.style.display = "block"
+                canvas.style.position = "absolute"
+                canvas.style.left = "0"
+                canvas.style.top = "0"
+                root.appendChild(canvas)
+                var ctx = canvas.getContext("2d", {
+                    alpha: false,
+                    desynchronized: true,
+                })
+                var dpr = Math.min(2, Math.max(1, window.devicePixelRatio || 1))
+                var authoredW = scene.meta.authoredWidth || 600,
+                    authoredH = scene.meta.authoredHeight || 400
+                var sourceW = scene.meta.sourceWidth || authoredW,
+                    sourceH = scene.meta.sourceHeight || authoredH
+                var crop = scene.meta.crop || null
+                var cropX = crop ? crop.x || 0 : 0
+                var cropY = crop ? crop.y || 0 : 0
+                var scale = 1,
+                    offX = 0,
+                    offY = 0,
+                    viewW = 0,
+                    viewH = 0
+                var __postedResize = 0
+                function resize() {
+                    var r = root.getBoundingClientRect()
+                    viewW = Math.max(1, Math.floor(r.width))
+                    viewH = Math.max(1, Math.floor(r.height))
+                    if (viewH <= 1) {
+                        viewH = Math.max(1, window.innerHeight || 1)
+                    }
+                    canvas.width = Math.floor(viewW * dpr)
+                    canvas.height = Math.floor(viewH * dpr)
+                    ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+                    scale = Math.min(viewW / authoredW, viewH / authoredH)
+                    offX = (viewW - authoredW * scale) / 2
+                    offY = (viewH - authoredH * scale) / 2
+                    if (!__postedResize) {
+                        __postedResize = 1
+                        __post("resize", {
+                            viewW: viewW,
+                            viewH: viewH,
+                            authoredW: authoredW,
+                            authoredH: authoredH,
+                            scale: scale,
+                            offX: offX,
+                            offY: offY,
+                        })
+                    }
+                }
+                window.addEventListener("resize", resize)
+                resize()
+                var __tries = 0
+                ;(function __settle() {
+                    __tries++
+                    resize()
+                    if (__tries < 30) {
+                        setTimeout(__settle, 33)
+                    }
+                })()
+                function hash(n) {
+                    n = (n << 13) ^ n
+                    return (
+                        ((n * (n * n * 15731 + 789221) + 1376312589) &
+                            0x7fffffff) /
+                        2147483647
+                    )
+                }
+                function lerp(a, b, t) {
+                    return a + (b - a) * t
+                }
+                function smooth(t) {
+                    return t * t * (3 - 2 * t)
+                }
+                function noise2(x, y) {
+                    var xi = Math.floor(x),
+                        yi = Math.floor(y)
+                    var xf = x - xi,
+                        yf = y - yi
+                    var a = hash(xi * 374761 + yi * 668265)
+                    var b = hash((xi + 1) * 374761 + yi * 668265)
+                    var c = hash(xi * 374761 + (yi + 1) * 668265)
+                    var d = hash((xi + 1) * 374761 + (yi + 1) * 668265)
+                    var u = smooth(xf),
+                        v = smooth(yf)
+                    return lerp(lerp(a, b, u), lerp(c, d, u), v)
+                }
+                function hash01(seed) {
+                    var x = Math.sin(seed * 12.9898) * 43758.5453
+                    return x - Math.floor(x)
+                }
+                function mulberry32(a) {
+                    return function () {
+                        var t = (a += 0x6d2b79f5)
+                        t = Math.imul(t ^ (t >>> 15), t | 1)
+                        t ^= t + Math.imul(t ^ (t >>> 7), t | 61)
+                        return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+                    }
+                }
+                function makeGaussian(rand) {
+                    var spare = null
+                    return function (mean, sd) {
+                        if (spare !== null) {
+                            var v = spare
+                            spare = null
+                            return mean + sd * v
+                        }
+                        var u = 0,
+                            v = 0
+                        while (u === 0) u = rand()
+                        while (v === 0) v = rand()
+                        var mag = Math.sqrt(-2 * Math.log(u))
+                        var z0 = mag * Math.cos(2 * Math.PI * v)
+                        var z1 = mag * Math.sin(2 * Math.PI * v)
+                        spare = z1
+                        return mean + sd * z0
+                    }
+                }
+                function b64ToU8(b64) {
+                    var bin = atob(b64 || "")
+                    var len = bin.length
+                    var u8 = new Uint8Array(len)
+                    for (var i = 0; i < len; i++) u8[i] = bin.charCodeAt(i)
+                    return u8
+                }
+                var mode = "spine"
+                var anim = scene.animation || {}
+                var recipe = scene.recipe || {}
+                function map(v, a1, a2, b1, b2) {
+                    return b1 + ((v - a1) * (b2 - b1)) / Math.max(1e-6, a2 - a1)
+                }
+                var spines = scene.spines || []
+                if ((!spines || !spines.length) && scene.spine)
+                    spines = [scene.spine]
+                var spCount = spines.length | 0
+                var spQ = new Array(spCount),
+                    spN = new Array(spCount),
+                    spPts = new Array(spCount),
+                    spCum = new Array(spCount),
+                    spLen = new Array(spCount)
+                for (var sidx = 0; sidx < spCount; sidx++) {
+                    var s = spines[sidx]
+                    if (!s || !s.pb || !s.pc) {
+                        spN[sidx] = 0
+                        spLen[sidx] = 0
+                        continue
+                    }
+                    spQ[sidx] = s.q || 1
+                    spN[sidx] = s.pc | 0
+                    var u8 = b64ToU8(s.pb)
+                    spPts[sidx] = new Int16Array(u8.buffer)
+                    var cum = new Float32Array(spN[sidx])
+                    cum[0] = 0
+                    var L = 0
+                    for (var i = 0; i < spN[sidx] - 1; i++) {
+                        var ax = spPts[sidx][i * 2] / spQ[sidx],
+                            ay = spPts[sidx][i * 2 + 1] / spQ[sidx]
+                        var bx = spPts[sidx][(i + 1) * 2] / spQ[sidx],
+                            by = spPts[sidx][(i + 1) * 2 + 1] / spQ[sidx]
+                        L += Math.hypot(bx - ax, by - ay)
+                        cum[i + 1] = L
+                    }
+                    spCum[sidx] = cum
+                    spLen[sidx] = L
+                }
+                function pointAtS(si, s) {
+                    var pts = spPts[si],
+                        cum = spCum[si],
+                        N = spN[si] | 0,
+                        L = spLen[si] || 0,
+                        Q = spQ[si] || 1
+                    if (!pts || !cum || N < 2 || L <= 0) {
+                        return { x: 0, y: 0, nx: 0, ny: 1 }
+                    }
+                    var ss = s % L
+                    if (ss < 0) ss += L
+                    var lo = 0,
+                        hi = N - 2
+                    while (lo <= hi) {
+                        var mid = (lo + hi) >> 1
+                        if (ss < cum[mid]) hi = mid - 1
+                        else if (ss > cum[mid + 1]) lo = mid + 1
+                        else {
+                            lo = mid
+                            break
+                        }
+                    }
+                    var idx = Math.max(0, Math.min(N - 2, lo))
+                    var ax = pts[idx * 2] / Q,
+                        ay = pts[idx * 2 + 1] / Q
+                    var bx = pts[(idx + 1) * 2] / Q,
+                        by = pts[(idx + 1) * 2 + 1] / Q
+                    var segLen = Math.max(1e-6, cum[idx + 1] - cum[idx])
+                    var t = (ss - cum[idx]) / segLen
+                    var x = ax + (bx - ax) * t,
+                        y = ay + (by - ay) * t
+                    var tx = (bx - ax) / segLen,
+                        ty = (by - ay) / segLen
+                    return { x: x, y: y, nx: -ty, ny: tx }
+                }
+                var density = +recipe.density || 1
+                var beam = +recipe.beamVariance || 20
+                var minS = +recipe.minSize || 1
+                var maxS = +recipe.maxSize || 8
+                var seed = recipe.seed >>> 0 || 1
+                var rand = mulberry32(seed)
+                var gauss = makeGaussian(rand)
+                var particles = null
+                function buildSpineParticles() {
+                    if (particles) return particles
+                    particles = []
+                    var CL = 4
+                    for (var si = 0; si < spCount; si++) {
+                        var s = spines[si] || {}
+                        if (s.visible === false) continue
+                        var pts = spPts[si],
+                            cum = spCum[si],
+                            N = spN[si] | 0,
+                            Q = spQ[si] || 1
+                        if (!pts || !cum || N < 2) continue
+                        for (var i = 0; i < N - 1; i++) {
+                            var ax = pts[i * 2] / Q,
+                                ay = pts[i * 2 + 1] / Q
+                            var bx = pts[(i + 1) * 2] / Q,
+                                by = pts[(i + 1) * 2 + 1] / Q
+                            var dx = bx - ax,
+                                dy = by - ay
+                            var segLen = Math.hypot(dx, dy)
+                            if (segLen < 1e-6) continue
+                            var count = Math.min(
+                                2500,
+                                Math.ceil(segLen * density),
+                            )
+                            var segStartS = cum[i] || 0
+                            for (var j = 0; j < count; j++) {
+                                var tt = j / Math.max(1, count)
+                                var baseS = segStartS + tt * segLen
+                                var offN = gauss(0, beam)
+                                var offT = gauss(0, beam * 0.15)
+                                var limN = beam * CL
+                                var limT = beam * 0.15 * CL
+                                if (offN > limN) offN = limN
+                                else if (offN < -limN) offN = -limN
+                                if (offT > limT) offT = limT
+                                else if (offT < -limT) offT = -limT
+                                var dist = Math.abs(offN)
+                                var size = map(dist, 0, beam * 2, maxS, minS)
+                                if (size < minS) size = minS
+                                else if (size > maxS) size = maxS
+                                particles.push({
+                                    si: si,
+                                    s: baseS,
+                                    n: offN,
+                                    t: offT,
+                                    z: size,
+                                    seed:
+                                        ((si + 1) * 100000000 +
+                                            i * 100000 +
+                                            j) >>>
+                                        0,
+                                })
+                            }
+                        }
+                    }
+                    return particles
+                }
+                function init() {
+                    if (mode === "shape") {
+                        var sh = scene.shape || {}
+                        var svg = sh.svg || ""
+                        if (!svg) {
+                            __showErr("Shape mode: missing SVG")
+                            return Promise.resolve(false)
+                        }
+                        var leeway = (anim.shapeLeewayPx || 0) | 0
+                        return buildShapeMask(svg, leeway).then(
+                            function (mask) {
+                                shapeMask = mask
+                                var stride = 2
+                                var r = bboxAndPts(
+                                    mask.core,
+                                    mask.w,
+                                    mask.h,
+                                    stride,
+                                )
+                                shapePts = r.pts
+                                __post("shape", { pts: shapePts.length })
+                                return true
+                            },
+                        )
+                    }
+                    return Promise.resolve(true)
+                }
+                var __postedParticles = 0
+                function renderFrame(tms) {
+                    var t = tms / 1000
+                    var wobA = anim.wobbleAmp || 0,
+                        wobS = anim.wobbleSpeed || 0,
+                        pulse = anim.pulseStrength || 0,
+                        pulseS = anim.pulseSpeed || 0
+                    var frameStep = Math.floor(
+                        t * Math.max(0.0001, pulseS) * 10,
+                    )
+                    ctx.globalAlpha = 1
+                    ctx.fillStyle = "#ffffff"
+                    ctx.fillRect(0, 0, viewW, viewH)
+                    ctx.fillStyle = __pc1
+                    if (mode === "shape") {
+                        var ps = buildShapeParticles()
+                        if (!__postedParticles) {
+                            __postedParticles = 1
+                            __post("particles", { count: ps.length })
+                            __hideLoading()
+                        }
+                        var cont = +anim.shapeContainment || 0.5
+                        var mix = __pc2t > 0
+                        for (var i = 0; i < ps.length; i++) {
+                            var p = ps[i]
+                            if (anim.animate) {
+                                if (wobA > 0) {
+                                    var ax =
+                                        (noise2(p.seed * 0.01, t * wobS) -
+                                            0.5) *
+                                        2
+                                    var ay =
+                                        (noise2(p.seed * 0.02, 100 + t * wobS) -
+                                            0.5) *
+                                        2
+                                    p.vx += ax * (wobA * 0.12)
+                                    p.vy += ay * (wobA * 0.12)
+                                }
+                                p.vx *= 0.9
+                                p.vy *= 0.9
+                                p.x += p.vx
+                                p.y += p.vy
+                                var inCore =
+                                    alphaAt(shapeMask, p.x, p.y, "core") > 0
+                                if (!inCore) {
+                                    var inLew =
+                                        alphaAt(shapeMask, p.x, p.y, "leeway") >
+                                        0
+                                    var k = inLew
+                                        ? 0.02 + 0.12 * cont
+                                        : 0.06 + 0.22 * cont
+                                    p.vx += (p.x0 - p.x) * k
+                                    p.vy += (p.y0 - p.y) * k
+                                    if (!inLew) {
+                                        var cl = findNearestInside(
+                                            shapeMask,
+                                            p.x,
+                                            p.y,
+                                        )
+                                        if (cl) {
+                                            p.x = cl.x
+                                            p.y = cl.y
+                                            p.vx *= 0.2
+                                            p.vy *= 0.2
+                                        }
+                                    }
+                                }
+                            }
+                            var alpha = 200 / 255
+                            if (anim.animate && pulse > 0) {
+                                var phase =
+                                    p.seed * 0.01 + t * pulseS * Math.PI * 2
+                                var vis =
+                                    1 -
+                                    pulse +
+                                    pulse * (0.5 + 0.5 * Math.sin(phase))
+                                var r = hash01(
+                                    (p.seed || i) + frameStep * 10007,
+                                )
+                                if (r > vis) continue
+                                alpha = (80 + 175 * vis) / 255
+                            }
+                            var rx = offX + (p.x - cropX) * scale
+                            var ry = offY + (p.y - cropY) * scale
+                            var radPx = Math.max(((p.z || 1) * scale) / 2, 0.6)
+                            if (mix) {
+                                ctx.fillStyle =
+                                    hash01(p.seed || i) < __pc2t ? __pc2 : __pc1
+                            }
+                            ctx.globalAlpha = alpha
+                            ctx.beginPath()
+                            ctx.arc(rx, ry, radPx, 0, Math.PI * 2)
+                            ctx.fill()
+                        }
+                        ctx.globalAlpha = 1
+                        requestAnimationFrame(renderFrame)
+                        return
+                    }
+                    var flow = anim.flowSpeed || 0
+                    var ps = buildSpineParticles()
+                    if (!__postedParticles) {
+                        __postedParticles = 1
+                        __post("particles", { count: ps.length })
+                        __hideLoading()
+                    }
+                    var mix = __pc2t > 0
+                    for (var i = 0; i < ps.length; i++) {
+                        var p = ps[i]
+                        var si = p.si || 0
+                        var x = 0,
+                            y = 0,
+                            alpha = 200 / 255
+                        var s = (p.s || 0) + (anim.animate ? flow * t : 0)
+                        var base = pointAtS(si, s + (p.t || 0))
+                        x = base.x + base.nx * (p.n || 0)
+                        y = base.y + base.ny * (p.n || 0)
+                        if (anim.animate && wobA > 0) {
+                            var pr = p.seed || i
+                            var n1 = noise2(pr * 0.01, t * wobS) - 0.5
+                            var n2 = noise2(pr * 0.02, 100 + t * wobS) - 0.5
+                            x += n1 * 2 * wobA
+                            y += n2 * 2 * wobA
+                        }
+                        var L = spLen[si] || 0
+                        if (anim.animate && pulse > 0 && L > 0) {
+                            var phase =
+                                (s / L) * Math.PI * 2 + t * pulseS * Math.PI * 2
+                            var vis =
+                                1 -
+                                pulse +
+                                pulse * (0.5 + 0.5 * Math.sin(phase))
+                            var pr2 = (p.seed || i) + frameStep * 10007
+                            var r = hash01(pr2)
+                            if (r > vis) continue
+                            alpha = (80 + 175 * vis) / 255
+                        }
+                        var rx = offX + (x - cropX) * scale
+                        var ry = offY + (y - cropY) * scale
+                        var radPx = Math.max(((p.z || 1) * scale) / 2, 0.6)
+                        if (mix) {
+                            ctx.fillStyle =
+                                hash01(p.seed || i) < __pc2t ? __pc2 : __pc1
+                        }
+                        ctx.globalAlpha = alpha
+                        ctx.beginPath()
+                        ctx.arc(rx, ry, radPx, 0, Math.PI * 2)
+                        ctx.fill()
+                    }
+                    ctx.globalAlpha = 1
+                    requestAnimationFrame(renderFrame)
+                }
+                init()
+                    .then(function (ok) {
+                        if (ok === false) return
+                        __hideLoading()
+                        requestAnimationFrame(renderFrame)
+                    })
+                    .catch(function (e) {
+                        __showErr(e && e.message ? e.message : e)
+                        __post("error", {
+                            message: String(e && e.message ? e.message : e),
+                        })
+                    })
+            })()
+        </script>
+    </body>
+</html>
