@@ -14,13 +14,13 @@
                 width: 100%;
                 height: 100%;
                 overflow: hidden;
-                background: #ffffff;
+                background: #1a1a1a;
             }
         </style>
     </head>
     <body>
         <div
-            id="protonBrushEmbed_sdph8monm6"
+            id="protonBrushEmbed_p6a493j53sp"
             style="
                 position: relative;
                 width: 100%;
@@ -67,35 +67,35 @@
                 var scene = {
                     meta: {
                         version: 3,
-                        authoredWidth: 1570,
-                        authoredHeight: 1570,
+                        authoredWidth: 1674,
+                        authoredHeight: 1672,
                         sourceWidth: 3140,
                         sourceHeight: 1352,
-                        crop: { x: 785, y: -109, w: 1570, h: 1570 },
-                        background: "#ffffff",
-                        particleColor: "#000000",
+                        crop: { x: 733, y: -160, w: 1674, h: 1672 },
+                        background: "#1a1a1a",
+                        particleColor: "#ffffff",
                         particleColor2: "#000000",
                         particleColor2Pct: 0,
                     },
                     mode: "spine",
                     animation: {
                         animate: 1,
-                        flowSpeed: 10,
-                        wobbleAmp: 6,
-                        wobbleSpeed: 1.2,
+                        flowSpeed: 40,
+                        wobbleAmp: 30,
+                        wobbleSpeed: 0.2,
                         pulseStrength: 0,
                         pulseSpeed: 0,
                         shapeContainment: 0.5,
                         shapeLeewayPx: 20,
                     },
                     recipe: {
-                        density: 0.2,
-                        densityCompExp: 0.75,
-                        beamVariance: 17,
-                        minSize: 3,
-                        maxSize: 3,
+                        density: 0.1,
+                        densityCompExp: 1,
+                        beamVariance: 20,
+                        minSize: 8,
+                        maxSize: 8,
                         organicWiggle: 0,
-                        seed: 409047753,
+                        seed: 108718990,
                     },
                     spines: [
                         {
@@ -153,12 +153,12 @@
                     packed: null,
                 }
                 var root = document.getElementById(
-                    "protonBrushEmbed_sdph8monm6",
+                    "protonBrushEmbed_p6a493j53sp",
                 )
                 if (!root) {
                     return
                 }
-                var __pc1 = "#000000"
+                var __pc1 = "#ffffff"
                 var __pc2 = "#000000"
                 var __pc2t = Math.max(0, Math.min(1, 0 / 100))
                 var __errEl = document.getElementById("__pb_err")
@@ -433,7 +433,11 @@
                     var seed = recipe.seed >>> 0 || 1
                     var rand = mulberry32(seed)
                     var gauss = makeGaussian(rand)
-                    var dens = Math.max(0, density * (densityScale || 1))
+                    var keepCycle = 16
+                    var keepMax = Math.min(
+                        keepCycle,
+                        Math.round(keepCycle * Math.min(1, densityScale || 1)),
+                    )
                     var CL = 4
                     for (var si = 0; si < spCount; si++) {
                         var s = spines[si] || {}
@@ -452,9 +456,17 @@
                                 dy = by - ay
                             var segLen = Math.hypot(dx, dy)
                             if (segLen < 1e-6) continue
-                            var count = Math.min(2500, Math.ceil(segLen * dens))
+                            var count = Math.min(
+                                2500,
+                                Math.ceil(segLen * density),
+                            )
                             var segStartS = cum[i] || 0
                             for (var j = 0; j < count; j++) {
+                                if (
+                                    keepMax < keepCycle &&
+                                    j % keepCycle >= keepMax
+                                )
+                                    continue
                                 var tt = j / Math.max(1, count)
                                 var baseS = segStartS + tt * segLen
                                 var offN = gauss(0, beam)
@@ -524,7 +536,7 @@
                         t * Math.max(0.0001, pulseS) * 10,
                     )
                     ctx.globalAlpha = 1
-                    ctx.fillStyle = "#ffffff"
+                    ctx.fillStyle = "#1a1a1a"
                     ctx.fillRect(0, 0, viewW, viewH)
                     ctx.fillStyle = __pc1
                     if (mode === "shape") {
